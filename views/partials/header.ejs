@@ -1,17 +1,13 @@
 <header>
   <h1><%= title %></h1>
     <p>
-      Welcome to
-      <% if (contextTitle) { %>
-      <h2><%= contextTitle %></h2>
-      <% else { %>
-      <h2><%= title %></h2>
-      <% } %>
+      Page Name: <%= contextTitle %>
     </p>
 </header>
 
 <ul>
   <li><a href="/">Home</a></li>
   <li><a href="/signup">Sign Up</a></li>
-  <li><a href="/users">Users</a></li>
+  <li><a href="/newsfeed">News Feed</a></li>
+  <li><a href="/albumfeed">Album Feed</a></li>
 </ul>

@@ -3,8 +3,8 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('users', {
-    title: 'respond with a resource',
+  res.render('newsFeed', {
+    title: 'News Feed',
     contextTitle: 'Users'
   });
 });
