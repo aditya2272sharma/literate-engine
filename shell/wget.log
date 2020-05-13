@@ -1,0 +1,20 @@
+--2020-04-20 04:01:55--  https://www.thehindu.com/news/cities/mumbai/actor-ajaz-khan-arrested-for-over-comment-on-facebook/article31380827.ece
+Resolving www.thehindu.com (www.thehindu.com)... 104.17.108.181, 104.17.107.181, 2606:4700::6811:6bb5, ...
+Connecting to www.thehindu.com (www.thehindu.com)|104.17.108.181|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.thehindu.com/news/cities/mumbai/actor-ajaz-khan-arrested-over-comment-on-facebook/article31380827.ece [following]
+--2020-04-20 04:01:55--  https://www.thehindu.com/news/cities/mumbai/actor-ajaz-khan-arrested-over-comment-on-facebook/article31380827.ece
+Reusing existing connection to www.thehindu.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘article31380827.ece’
+
+     0K .......... .......... .......... .......... .......... 1.60M
+    50K .......... .......... .......... .......... .......... 10.4M
+   100K .......... .......... .......... .......... .......... 8.47M
+   150K .......... .......... .......... .......... .......... 2.21M
+   200K .......... .......... .......... .......... .......... 2.01M
+   250K ..                                                     4079G=0.09s
+
+2020-04-20 04:01:55 (2.82 MB/s) - ‘article31380827.ece’ saved [258190]
+

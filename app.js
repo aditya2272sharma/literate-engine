@@ -4,11 +4,15 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var googledocsapi = require('./middleware/googledocs.api.middleware');
+
 var indexRouter = require('./routes/index');
 var signUpRouter = require('./routes/signup');
 var usersRouter = require('./routes/users');
-var newsFeedRouter = require('./routes/newsFeed');
-var albumFeedRouter = require('./routes/albumFeed');
+var newsFeedRouter = require('./routes/newsfeed');
+var albumFeedRouter = require('./routes/albumfeed');
+var signInRouter = require('./routes/signIn');
+var sheet1Router = require('./routes/sheet1');
 
 var app = express();
 
@@ -19,14 +23,17 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(cookieParser('secret'));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(googledocsapi);
 
 app.use('/', indexRouter);
+app.use('/signin', signInRouter);
 app.use('/signup', signUpRouter);
 app.use('/users', usersRouter);
 app.use('/newsfeed', newsFeedRouter);
 app.use('/albumfeed', albumFeedRouter);
+app.use('/sheet1', sheet1Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
