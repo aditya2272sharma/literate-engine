@@ -11,7 +11,7 @@ async function main() {
   // const auth = new google.auth.GoogleAuth({
   // ..obsolete
 
-  // https://cloud.google.com/docs/authentication/getting-started
+
   const auth = new GoogleAuth({
     // Scopes can be specified either as an array or as a single, space-delimited string.
     scopes: ['https://www.googleapis.com/auth/compute']
